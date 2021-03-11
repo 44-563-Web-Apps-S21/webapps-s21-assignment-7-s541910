@@ -63,8 +63,10 @@
                     break;
                 } }
             if (r == 0) {
-                i = Math.floor((Math.random() * 9) + 0);
-                listyItems[i].remove();
+                var rand=Math.floor(Math.random()*(max-min)+min)
+              
+                      listyItems[rand].remove();
+           
                 console.log("We get rid of the first item.")
             }
         }
